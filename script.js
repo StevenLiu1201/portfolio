@@ -63,6 +63,9 @@ createParticles();
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
+    //remove active on nav links for mobile view
+    document.querySelector(".nav-links").classList.remove("active");
+    
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       target.scrollIntoView({
@@ -133,3 +136,8 @@ document
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
     observer.observe(el);
   });
+
+// for mobile responsive hamburger btn
+document.getElementById("hamburger").addEventListener("click", function () {
+  document.querySelector(".nav-links").classList.toggle("active");
+});
