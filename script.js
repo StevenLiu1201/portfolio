@@ -77,30 +77,30 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // Form submission
-document
-  .querySelector(".contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+// document
+//   .querySelector(".contact-form")
+//   .addEventListener("submit", function (e) {
+//     e.preventDefault();
 
-    // Get form data
-    const formData = new FormData(this);
-    const name = formData.get("name");
-    const email = formData.get("email");
-    const message = formData.get("message");
+//     // Get form data
+//     const formData = new FormData(this);
+//     const name = formData.get("name");
+//     const email = formData.get("email");
+//     const message = formData.get("message");
 
-    // Simulate form submission
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.textContent;
-    submitBtn.textContent = "Sending...";
-    submitBtn.disabled = true;
+//     // Simulate form submission
+//     const submitBtn = this.querySelector('button[type="submit"]');
+//     const originalText = submitBtn.textContent;
+//     submitBtn.textContent = "Sending...";
+//     submitBtn.disabled = true;
 
-    setTimeout(() => {
-      alert("Thank you for your message! I'll get back to you soon.");
-      this.reset();
-      submitBtn.textContent = originalText;
-      submitBtn.disabled = false;
-    }, 2000);
-  });
+//     setTimeout(() => {
+//       alert("Thank you for your message! I'll get back to you soon.");
+//       this.reset();
+//       submitBtn.textContent = originalText;
+//       submitBtn.disabled = false;
+//     }, 2000);
+//   });
 
 // Navbar background on scroll
 window.addEventListener("scroll", () => {
