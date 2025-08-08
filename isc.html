@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ZL - Work Experiences</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* .experience-content {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 4rem;
+        align-items: start;
+      } */
+      .experience-text h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #40e0ff, #64b5f6);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .experience-text p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #fbf4f4;
+      }
+
+      .courses {
+        background: rgba(255, 255, 255, 0.01);
+      }
+      .container h2 {
+        text-align: center;
+        font-size: 2.8rem;
+        margin-bottom: 4rem;
+        background: linear-gradient(135deg, #40e0ff, #64b5f6);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .courses-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .image-caption {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+      }
+      .image-caption img {
+        width: 100%;
+      }
+
+      .image-caption::after {
+        content: attr(data-caption);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px 12px;
+        background: rgba(0, 0, 0, 0.2); /* semi-transparent black */
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        backdrop-filter: blur(2px);
+        box-sizing: border-box;
+      }
+
+      /* change the work style */
+      .works-text {
+        font: 1.2rem;
+        line-height: 1.5;
+      }
+      .works-img img {
+        border-radius: 12px;
+        width: 100%;
+        cursor: pointer;
+      }
+      /* Mobile Responsiveness for Timeline */
+      @media (max-width: 768px) {
+        .experience-content {
+          grid-template-columns: 1fr;
+
+          align-items: start;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Animated background -->
+    <div class="bg-animation"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <a href="index.html#works" class="home-link"
+            ><img width="40rem" src="./img/icon/home-button.png" alt="home buttone" srcset=""></a
+          >
+
+        <ul class="nav-links">
+          <div class="logo">ZL</div>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="experience-content">
+            <!-- <div>
+              <img
+                src="./img/CT-outlook.webp"
+                style="border-radius: 20px; width: 100%"
+                alt=""
+              />
+            </div> -->
+            <div class="experience-text">
+              <h2>Indigenous Services Canada</h2>
+              <h3>May 2024 - Present</h3>
+              <br />
+              <p class="mb-1">
+                I’ve been working as a Developmental Program Officer in the
+                e-learning development team at Indigenous Services Canada, where
+                I’ve contributed to the creation of several national training
+                courses, including Registration Basics, SCIS Receiving Agent,
+                Registration Level 1 and 2, and Document Examination.
+              </p>
+              <p>My role involves :</p>
+
+              <ul>
+                <li>
+                  <p>
+                    Design, develop, and maintain interactive job aids and
+                    e-learning courses on the Moodle platform
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Build and manage accessible training websites that meet WCAG
+                    2.1 AA standards
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Create engaging quizzes, interactive activities, and
+                    instructional videos to enhance learning
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Configure course settings and troubleshoot technical issues
+                    reported by trainers and learners
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Develop a scalable Dynamic Job Aid Framework using
+                    JavaScript with reusable components and URL-based routing
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Perform data analysis and integrate APIs to generate
+                    customized course progress reports for internal trainers
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="courses">
+        <div class="container">
+          <h2>Training courses have developed</h2>
+          <div class="courses-container">
+            <div class="image-caption" data-caption="Adoption Registration">
+              <img src="./img/isc_projects/OLP_Adoption_Thumbnail.png" alt="" />
+            </div>
+            <div class="image-caption" data-caption="Document Examination">
+              <img
+                src="./img/isc_projects/OLP_DocumentExaminer_Thumbnail_Purple.png"
+                alt=""
+              />
+            </div>
+            <div class="image-caption" data-caption="Reg Basics">
+              <img
+                src="./img/isc_projects/OLP_RegBasics_Thumbnail_300ppi_small (1).png"
+                alt=""
+              />
+            </div>
+            <div class="image-caption" data-caption="Registration Level1">
+              <img
+                src="./img/isc_projects/OLP_RegLevel1_Thumbnail_300ppi_small.png"
+                alt=""
+              />
+            </div>
+            <div class="image-caption" data-caption="RIPM">
+              <img src="./img/isc_projects/OLP_RIPM Tile.png" alt="" />
+            </div>
+            <div class="image-caption" data-caption="Receiving Agent">
+              <img
+                src="./img/isc_projects/OLP_SCIS_RecAgent_Thumbnail_300ppi_Blue.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="works timeline">
+        <div class="container">
+          <h2>Several Interesting Projects</h2>
+          <div class="works-content" style="row-gap: 10rem !important">
+            <div class="works-img">
+              <img
+                src="./img/isc_projects/referenceGuide1.png"
+                alt="referenceGuide screenshot"
+                srcset=""
+                onclick="openOverlay(this)"
+              />
+            </div>
+            <div class="works-card">
+              <h3>Reference guide</h3>
+              <p class="works-text">
+                The Reference Guide is a searchable web-based tool designed to
+                help students review course content more efficiently. It allows
+                users to quickly find key information by entering keywords or
+                phrases, making it easier to revisit specific topics or
+                concepts. Organized for clarity and ease of use, the guide
+                supports independent learning and reinforces key training
+                material.
+              </p>
+            </div>
+
+            <div class="works-card">
+              <h3>Custom Course Report</h3>
+              <p class="works-text">
+                To overcome the limitations of Moodle’s built-in reporting
+                tools, I developed a custom web-based reporting page using
+                JavaScript. After IT restrictions prevented the use of
+                third-party plugins, I created a solution that analyzes student
+                log data and presents it in a user-friendly interface. The
+                report includes sortable columns (e.g., enrollment time, exam
+                status, exam completion time) and a search function to quickly
+                locate individual students by name, helping trainers monitor
+                progress more effectively.
+              </p>
+            </div>
+            <div class="works-img">
+              <img
+                src="./img/isc_projects/report.PNG"
+                alt="custom report project screenshot"
+                srcset=""
+                onclick="openOverlay(this)"
+              />
+            </div>
+
+            <div class="works-img">
+              <img
+                src="./img/isc_projects/glossary_jobaid.png"
+                alt="glossary_jobaid screenshot"
+                srcset=""
+                onclick="openOverlay(this)"
+              />
+            </div>
+            <div class="works-card">
+              <h3>A bunch of Job Aid Websites</h3>
+              <p class="works-text">
+                I developed a standardized job aid framework to support multiple
+                training topics, allowing all job aids to share a consistent
+                layout and structure. By using URL parameters, each job aid page
+                loads dynamic content while reusing the same core template. This
+                scalable system improves maintainability and user experience.
+                Published job aids include: Glossary Acronyms, Occupation-Based
+                Guarantors, Acceptable and Unacceptable ID, and Name Variations
+                on Supporting Documents, among others.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Fullscreen overlay (hidden by default) -->
+    <div id="imageOverlay" class="overlay" onclick="closeOverlay()">
+      <img id="overlayImg" src="" alt="Full Image" />
+      <span class="close-btn">&times;</span>
+    </div>
+  </body>
+</html>
+
+<script>
+  function openOverlay(imgElement) {
+    const overlay = document.getElementById("imageOverlay");
+    const overlayImg = document.getElementById("overlayImg");
+    overlayImg.src = imgElement.src;
+    overlay.style.display = "flex";
+  }
+
+  function closeOverlay() {
+    const overlay = document.getElementById("imageOverlay");
+    overlay.style.display = "none";
+  }
+</script>

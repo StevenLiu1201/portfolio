@@ -6,7 +6,47 @@
 
     <title>ZL - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="certificate.css" />
+    <link rel="stylesheet" href="experience.css" />
     <script src="script.js" defer></script>
+
+    <!-- <style>
+      .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        background: #ccc;
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 20px 40px;
+        box-sizing: border-box;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        width: 20px;
+        height: 20px;
+        background: #0077ff;
+        border-radius: 50%;
+        z-index: 1;
+      }
+    </style> -->
   </head>
   <body>
     <!-- Loading screen -->
@@ -33,6 +73,8 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#works">Experiences</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -43,10 +85,10 @@
       <section id="home" class="hero">
         <div class="container">
           <h1>Zhongrui Liu</h1>
-          <p
-            >Full-Stack Developer specializing in
-            <span class="typing-text" id="typingText">Modern Web Apps</span></p
-          >
+          <p>
+            Full-Stack Developer specializing in
+            <span class="typing-text" id="typingText">Modern Web Apps</span>
+          </p>
           <div class="cta-buttons">
             <a href="#projects" class="btn btn-primary">View My Work</a>
             <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -60,20 +102,20 @@
           <div class="about-content">
             <div class="about-text">
               <h2>About Me</h2>
-              <p
-                >I'm a passionate full-stack developer with a strong foundation
+              <p>
+                I'm a passionate full-stack developer with a strong foundation
                 in secure full-stack development using various language and
                 frameworks. I love turning complex problems into simple,
-                beautiful solutions.</p
-              >
-              <p
-                >Currently working at Indigenous Services Canada, where I design
+                beautiful solutions.
+              </p>
+              <p>
+                Currently working at Indigenous Services Canada, where I design
                 and maintain accessible, dynamic web-based learning systems and
                 job aid tools. Holds a Government of Canada reliability
                 clearance and is consistently recognized for strong time
                 management, adaptability, and collaboration in technical
-                environments.</p
-              >
+                environments.
+              </p>
               <div class="skills">
                 <span class="skill-tag">JavaScript</span>
                 <span class="skill-tag">React</span>
@@ -94,10 +136,10 @@
                 <div style="margin-left: 1.5rem">
                   <div>name: 'Zhongrui Liu',</div>
                   <div>Languages: ['JavaScript', 'C#', 'SQL','PHP'],</div>
-                  <div
-                    >Frameworks/Tech: ['ASP.NET Core', 'Entity Framework',
-                    'React','jQuery','MVC'],</div
-                  >
+                  <div>
+                    Frameworks/Tech: ['ASP.NET Core', 'Entity Framework',
+                    'React','jQuery','MVC'],
+                  </div>
 
                   <div>passion: 'Building amazing web experiences',</div>
                   <div>Data Formats: ['XML', 'JSON'],</div>
@@ -115,42 +157,53 @@
         <div class="container">
           <h2>Featured Projects</h2>
           <div class="project-grid">
-             <div class="project-card">
+            <div class="project-card">
               <h3>Massage Clinic App</h3>
-              <p
-                >A real project for a local massage clinc, with SEO and content
-                management system</p
-              >
+              <p>
+                A real project for a local massage clinc, with SEO and content
+                management system
+              </p>
               <div class="project-tech">
                 <span class="tech-tag">PHP</span>
                 <span class="tech-tag">Tailwind.css</span>
                 <span class="tech-tag">Google API</span>
               </div>
               <div class="project-links">
-                <a target="_blank" href="https://cmgmassagetherapy.com/">View the Website</a>
-                
+                <a target="_blank" href="https://cmgmassagetherapy.com/"
+                  >View the Website</a
+                >
               </div>
             </div>
-             <div class="project-card">
+            <div class="project-card">
               <h3>AI Learning Assistant</h3>
-              <p>Created an AI-powered learning assistant by deploying an OpenAI language model through Azure API Management. Designed and configured the Azure OpenAI endpoint to serve a GPT-based model with role-based prompts and custom knowledge injection. </p>
+              <p>
+                Created an AI-powered learning assistant by deploying an OpenAI
+                language model through Azure API Management. Designed and
+                configured the Azure OpenAI endpoint to serve a GPT-based model
+                with role-based prompts and custom knowledge injection.
+              </p>
               <div class="project-tech">
                 <span class="tech-tag">Azure API</span>
                 <span class="tech-tag">OpenAI Model</span>
                 <span class="tech-tag">JavaScript</span>
-                
               </div>
               <div class="project-links">
-                <a target="_blank" href="https://azure-ai-chat.vercel.app/">Live Demo</a>
-                <a target="_blank" href="https://github.com/StevenLiu1201/azure-ai-chat">GitHub</a>
+                <a target="_blank" href="https://azure-ai-chat.vercel.app/"
+                  >Live Demo</a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/StevenLiu1201/azure-ai-chat"
+                  >GitHub</a
+                >
               </div>
             </div>
             <div class="project-card">
               <h3>E-Commerce Platform</h3>
-              <p
-                >A full-featured e-commerce platform with real-time inventory
-                management, payment processing, and admin dashboard.</p
-              >
+              <p>
+                A full-featured e-commerce platform with real-time inventory
+                management, payment processing, and admin dashboard.
+              </p>
               <div class="project-tech">
                 <span class="tech-tag">HTML5</span>
                 <span class="tech-tag">CSS</span>
@@ -168,30 +221,38 @@
                 >
               </div>
             </div>
-           
+
             <div class="project-card">
-                <h3>Restaurant Review System </h3>
-                <p
-                  >Designed and implemented a RESTful API using ASP.NET Core to manage restaurant review data in XML format. Built a client-side ASP.NET MVC Core application to consume the API,and display reviews with Razor Views. Deployed both the API and client application to Azure App Service for live access and testing.</p
-                >
-                <div class="project-tech">
-                  <span class="tech-tag">C#</span>
-                  <span class="tech-tag">ASP.NET Core</span>              
-                  <span class="tech-tag">XML</span>
-                  <span class="tech-tag">Restful API</span>
-                  <span class="tech-tag">Azure App Service</span>
-                </div>
-                <div class="project-links">
-                  <a target="_blank" href="https://restaurant-review-client-ehg4fgahf6e6edfw.canadacentral-01.azurewebsites.net/">Live Demo</a>
-                  <!-- <a href="#">GitHub</a> -->
-                </div>
+              <h3>Restaurant Review System</h3>
+              <p>
+                Designed and implemented a RESTful API using ASP.NET Core to
+                manage restaurant review data in XML format. Built a client-side
+                ASP.NET MVC Core application to consume the API,and display
+                reviews with Razor Views. Deployed both the API and client
+                application to Azure App Service for live access and testing.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">C#</span>
+                <span class="tech-tag">ASP.NET Core</span>
+                <span class="tech-tag">XML</span>
+                <span class="tech-tag">Restful API</span>
+                <span class="tech-tag">Azure App Service</span>
               </div>
+              <div class="project-links">
+                <a
+                  target="_blank"
+                  href="https://restaurant-review-client-ehg4fgahf6e6edfw.canadacentral-01.azurewebsites.net/"
+                  >Live Demo</a
+                >
+                <!-- <a href="#">GitHub</a> -->
+              </div>
+            </div>
             <div class="project-card">
               <h3>Weather Forecast App</h3>
-              <p
-                >Beautiful weather application with location-based forecasting,
-                interactive maps, and personalized weather alerts.</p
-              >
+              <p>
+                Beautiful weather application with location-based forecasting,
+                interactive maps, and personalized weather alerts.
+              </p>
               <div class="project-tech">
                 <span class="tech-tag">React Native</span>
                 <span class="tech-tag">OpenWeather API</span>
@@ -203,8 +264,166 @@
                 <!-- <a href="#">GitHub</a> -->
               </div>
             </div>
-           
-            
+          </div>
+        </div>
+      </section>
+
+      <!-- Work experience Section -->
+      <!-- <section id="works" class="works timeline">
+        <div class="container">
+          <div class="works-content">
+            <div class="works-img">
+              <img src="./img/govt-of-canada.png" alt="isc logo" srcset="" />
+            </div>
+            <div class="works-card">
+              <p class="works-text">
+                Since May 2024, I’ve been working as a Developmental Program
+                Officer in the e-learning development team at Indigenous
+                Services Canada, where I’ve contributed to the creation of
+                several national training courses, including Registration
+                Basics, SCIS Receiving Agent, Registration Level 1 and 2, and
+                Document Examination.
+              </p>
+              <a
+                href="isc.html"
+                class="btn btn-secondary explore-btn"
+                rel="noopener noreferrer"
+                >Explore More</a
+              >
+            </div>
+
+            <div class="works-card">
+              <p class="works-text">
+                Since August 2020, I’ve been working as a warehouse manager at
+                Canadian Tire, where Led the warehouse team at Canadian Tire,
+                redesigned the layout for a new store, and trained new staff on
+                operations and safety.
+              </p>
+              <a
+                href="ct.html"
+                class="btn btn-secondary explore-btn"
+                rel="noopener noreferrer"
+                >Explore More</a
+              >
+            </div>
+            <div class="works-img">
+              <img src="./img/CT.png" alt="canadian tire logo" srcset="" />
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- Work Experience Timeline Section -->
+      <section id="works">
+        <div class="container">
+          <h2>Work Experience</h2>
+
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+
+            <div class="works-content">
+              <div class="timeline-item left">
+                <div class="timeline-content">
+                  <div class="timeline-date">May 2024 - Present</div>
+                  <h3 class="timeline-title">Developmental Program Officer</h3>
+                  <h4 class="timeline-company">Indigenous Services Canada</h4>
+                  <p class="timeline-description">
+                    I’ve contributed to the creation of several national
+                    training courses, including Registration Basics, SCIS
+                    Receiving Agent, Registration Level 1 and 2, and Document
+                    Examination.
+                  </p>
+                  <a
+                    href="isc.html"
+                    class="btn btn-secondary explore-btn"
+                    rel="noopener noreferrer"
+                    >Explore More</a
+                  >
+                </div>
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="works-img">
+                <img src="./img/govt-of-canada.png" alt="isc logo" srcset="" />
+                <!-- <img src="./img/Indigenous-Services-Canada.webp" alt="isc logo" srcset="" style="padding: 1rem 2rem; background-color: white; border-radius: 12px;"/> -->
+              </div>
+
+              <div class="works-img">
+                <img src="./img/CT.png" alt="canadian tire logo" srcset="" />
+              </div>
+              <div class="timeline-item right">
+                <div class="timeline-content">
+                  <div class="timeline-date">August 2020 - May 2024</div>
+                  <h3 class="timeline-title">Warehouse Manager</h3>
+                  <h4 class="timeline-company">Canadian Tire</h4>
+                  <p class="timeline-description">
+                    Leading the warehouse team at Canadian Tire, redesigned the
+                    layout for a new store, and trained new staff on operations
+                    and safety.
+                  </p>
+                  <a
+                    href="ct.html"
+                    class="btn btn-secondary explore-btn"
+                    rel="noopener noreferrer"
+                    >Explore More</a
+                  >
+                </div>
+                <div class="timeline-dot"></div>
+              </div>
+
+              <div class="timeline-item left">
+                <div class="timeline-content">
+                  <div class="timeline-date">Oct 2016 - May 2017</div>
+                  <h3 class="timeline-title">Web Backend Developer</h3>
+                  <h4 class="timeline-company">Beiming Software Corporation</h4>
+                  <p class="timeline-description">
+                    I worked on a Java-based employee management system in a
+                    professional backend development role. This project involved
+                    structured database operations (MySQL), user-role access
+                    control, and modular deployment logic—giving me a strong
+                    foundation in server-side problem-solving and data handling.
+                  </p>
+                  <div class="timeline-skills">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">MySQL</span>
+                  </div>
+                </div>
+                <div class="timeline-dot"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Certificates Section -->
+      <section id="certificates" class="certificates">
+        <div class="container">
+          <div class="certificates-section">
+            <h2 class="section-title">My Certificates</h2>
+
+            <div class="carousel-container">
+              <button class="nav-arrow left" onclick="previousCertificate()"
+                >‹</button
+              >
+
+              <div class="certificates-carousel" id="carousel">
+                <!-- Certificates will be dynamically populated -->
+              </div>
+
+              <button class="nav-arrow right" onclick="nextCertificate()"
+                >›</button
+              >
+            </div>
+
+            <div class="certificate-details">
+              <div class="details-title" id="detailsTitle"
+                >React Developer Certification</div
+              >
+              <div class="details-description" id="detailsDescription">
+                Comprehensive certification covering React fundamentals, state
+                management, hooks, component architecture, and modern
+                development practices. Completed advanced projects including
+                single-page applications and full-stack integrations.
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -213,12 +432,16 @@
       <section id="contact" class="contact">
         <div class="container">
           <h2>Let's Work Together</h2>
-          <p
-            >Have a project in mind? Let's discuss how we can bring your ideas
-            to life. I'm always excited to take on new challenges!</p
-          >
+          <p>
+            Have a project in mind? Let's discuss how we can bring your ideas to
+            life. I'm always excited to take on new challenges!
+          </p>
 
-          <form class="contact-form" action="https://formsubmit.co/stevenliu0826@gmail.com"  method="POST">
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/stevenliu0826@gmail.com"
+            method="POST"
+          >
             <div class="form-group">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required />
